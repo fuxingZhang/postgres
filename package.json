@@ -1,5 +1,5 @@
 {
-  "name": "postgres",
+  "name": "node-postgres",
   "version": "0.0.1",
   "description": "PostgreSQL clinet",
   "main": "./lib",
