@@ -1,0 +1,22 @@
+{
+  "name": "postgres",
+  "version": "0.0.1",
+  "description": "PostgreSQL clinet",
+  "main": "./lib",
+  "scripts": {
+    "test": "mocha"
+  },
+  "keywords": [
+    "database",
+    "pg",
+    "libpg",
+    "postgre",
+    "postgres",
+    "postgresql"
+  ],
+  "author": "zhang fu xing <502545703@qq.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "mocha": "^6.2.0"
+  }
+}
