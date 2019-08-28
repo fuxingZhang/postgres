@@ -14,9 +14,14 @@
     "postgres",
     "postgresql"
   ],
-  "author": "zhang fu xing <502545703@qq.com>",
-  "license": "MIT",
+  "author": "Zhang Fu Xing <502545703@qq.com>",
   "devDependencies": {
     "mocha": "^6.2.0"
-  }
+  },
+  "homepage": "https://github.com/fuxingZhang/postgres",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/fuxingZhang/postgres.git"
+  },
+  "license": "MIT"
 }
