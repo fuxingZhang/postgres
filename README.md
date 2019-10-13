@@ -1,6 +1,12 @@
 # postgres
 PostgreSQL client for node.js.  
 
+## Install
+
+```sh
+$ npm i node-postgres
+```
+
 ## Todo list
 * connect
 * startup
@@ -15,9 +21,3 @@ PostgreSQL client for node.js.
 * ~~ssl~~
 * ~~pool~~
 * ...
-
-## Install
-
-```sh
-$ npm i node-postgres
-```
