@@ -9,8 +9,10 @@ $ npm i node-postgres
 
 ## Todo list
 * connect
+  * ~~parseR~~
+  * ~~parseE~~
 * startup
-* ~~Authentication~~
+* Authentication
   * ~~AuthenticationOk~~
   * ~~AuthenticationKerberosV5~~
   * ~~AuthenticationCleartextPassword~~
