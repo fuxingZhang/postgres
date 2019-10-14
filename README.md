@@ -9,7 +9,7 @@ $ npm i node-postgres
 
 ## Todo list
 * connect
-  * ~~parseR~~
+  * parseR
   * ~~parseE~~
 * startup
 * Authentication
@@ -17,7 +17,7 @@ $ npm i node-postgres
   * ~~AuthenticationKerberosV5~~
   * ~~AuthenticationCleartextPassword~~
   * ~~AuthenticationCryptPassword~~
-  * ~~AuthenticationMD5Password~~
+  * AuthenticationMD5Password
   * ~~AuthenticationSCMCredential~~
 * ~~query~~
 * end
