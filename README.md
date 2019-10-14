@@ -13,7 +13,7 @@ $ npm i node-postgres
   * ~~parseE~~
 * startup
 * Authentication
-  * ~~AuthenticationOk~~
+  * AuthenticationOk
   * ~~AuthenticationKerberosV5~~
   * ~~AuthenticationCleartextPassword~~
   * ~~AuthenticationCryptPassword~~
