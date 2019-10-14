@@ -14,11 +14,8 @@ $ npm i node-postgres
 * startup
 * Authentication
   * AuthenticationOk
-  * ~~AuthenticationKerberosV5~~
   * AuthenticationCleartextPassword
-  * ~~AuthenticationCryptPassword~~
   * AuthenticationMD5Password
-  * ~~AuthenticationSCMCredential~~
 * ~~query~~
 * end
 * ~~ssl~~
