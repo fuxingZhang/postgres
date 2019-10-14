@@ -1,10 +1,20 @@
-const assert = require('assert');
+'use strict';
+
 const { Client, Pool } = require('../lib');
 
-describe('Array', function () {
-  describe('#indexOf()', function () {
-    it('should return -1 when the value is not present', function () {
-      assert.equal([1, 2, 3].indexOf(4), -1);
-    });
+(async () => {
+  const client = new Client({
+    user: 'postgres',
+    host: '127.0.0.1',
+    database: 'test',
+    password: 'esri@123',
+    port: 5432,
+    ssl: false
   });
-});
+  
+  await client.connect();
+  
+  // const res = await client.query('SELECT NOW()')
+  // console.log(res);
+  // await client.end()
+})().catch(console.error);

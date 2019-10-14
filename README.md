@@ -20,6 +20,7 @@ $ npm i node-postgres
   * ~~AuthenticationMD5Password~~
   * ~~AuthenticationSCMCredential~~
 * ~~query~~
+* end
 * ~~ssl~~
 * ~~pool~~
 * ...
