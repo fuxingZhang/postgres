@@ -15,7 +15,7 @@ $ npm i node-postgres
 * Authentication
   * AuthenticationOk
   * ~~AuthenticationKerberosV5~~
-  * ~~AuthenticationCleartextPassword~~
+  * AuthenticationCleartextPassword
   * ~~AuthenticationCryptPassword~~
   * AuthenticationMD5Password
   * ~~AuthenticationSCMCredential~~
