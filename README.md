@@ -16,7 +16,10 @@ $ npm i node-postgres
   * AuthenticationOk
   * AuthenticationCleartextPassword
   * AuthenticationMD5Password
-* ~~query~~
+* query
+  * RowDescription 
+  * ~~DataRow~~
+* ~~query queue~~
 * end
 * ~~ssl~~
 * ~~pool~~
