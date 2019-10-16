@@ -8,7 +8,7 @@ $ npm i node-postgres
 ```
 
 ## Todo list
-* connect
+* [x] connect
   * parseR
   * parseE
   * parseT
@@ -27,6 +27,6 @@ $ npm i node-postgres
   * DataRow
 * ~~query queue~~
 * end
-* ~~ssl~~
-* ~~pool~~
+* [] ssl
+* [] pool
 * ...
