@@ -16,6 +16,7 @@ $ npm i node-postgres
   * parseK
   * parseZ
   * parseD
+  * parseC
 * startup
 * Authentication
   * AuthenticationOk
@@ -23,7 +24,7 @@ $ npm i node-postgres
   * AuthenticationMD5Password
 * query
   * RowDescription 
-  * ~~DataRow~~
+  * DataRow
 * ~~query queue~~
 * end
 * ~~ssl~~
