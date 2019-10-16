@@ -12,6 +12,7 @@ $ npm i node-postgres
   * parseR
   * parseE
   * parseT
+  * parseS
 * startup
 * Authentication
   * AuthenticationOk
