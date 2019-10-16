@@ -15,7 +15,7 @@ const { Client, Pool } = require('../lib');
   await client.connect();
   console.log('connected');
   
-  const res = await client.query('SELECT NOW()')
+  const res = await client.query('SELECT * from users')
   console.log(res);
-  // await client.end()
+  // await client.end();
 })().catch(console.error);
