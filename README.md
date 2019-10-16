@@ -9,24 +9,24 @@ $ npm i node-postgres
 
 ## Todo list
 * [x] connect
-  * parseR
-  * parseE
-  * parseT
-  * parseS
-  * parseK
-  * parseZ
-  * parseD
-  * parseC
-* startup
-* Authentication
-  * AuthenticationOk
-  * AuthenticationCleartextPassword
-  * AuthenticationMD5Password
-* query
-  * RowDescription 
-  * DataRow
-* ~~query queue~~
-* end
-* [] ssl
-* [] pool
+  * [x] parseR
+  * [x] parseE
+  * [x] parseT
+  * [x] parseS
+  * [x] parseK
+  * [x] parseZ
+  * [x] parseD
+  * [x] parseC
+* [x] startup
+* [x] Authentication
+  * [x] AuthenticationOk
+  * [x] AuthenticationCleartextPassword
+  * [x] AuthenticationMD5Password
+* [x] query
+  * [x] RowDescription 
+  * [x] DataRow
+* [ ] query queue
+* [x] end
+* [ ] ssl
+* [ ] pool
 * ...
