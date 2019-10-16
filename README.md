@@ -10,7 +10,8 @@ $ npm i node-postgres
 ## Todo list
 * connect
   * parseR
-  * ~~parseE~~
+  * parseE
+  * parseT
 * startup
 * Authentication
   * AuthenticationOk
