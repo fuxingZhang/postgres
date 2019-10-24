@@ -2,7 +2,7 @@
   "name": "node-postgres",
   "version": "0.1.1",
   "description": "PostgreSQL clinet",
-  "main": "./lib",
+  "main": "index.js",
   "scripts": {
     "test": "mocha"
   },

@@ -1,6 +1,6 @@
 'use strict';
 
-const { Client, Pool } = require('../lib');
+const { Client, Pool } = require('../index');
 
 (async () => {
   const client = new Client({
