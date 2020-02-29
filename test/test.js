@@ -17,5 +17,5 @@ const { Client, Pool } = require('../index');
   
   const res = await client.query('SELECT * from users')
   console.log(res);
-  // await client.end();
+  await client.end();
 })().catch(console.error);
