@@ -27,6 +27,6 @@ $ npm i node-postgres
   * [x] DataRow
 * [ ] query queue
 * [x] end
-* [ ] ssl
+* [x] ssl
 * [ ] pool
 * [ ] ...

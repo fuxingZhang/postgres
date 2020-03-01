@@ -8,13 +8,11 @@ const { Client, Pool } = require('../index');
     host: '127.0.0.1',
     database: 'test',
     password: 'esri@123',
-    port: 5432,
-    ssl: false
+    port: 5432
   });
   
   await client.connect();
-  console.log('connected');
-  
+
   const res = await client.query('SELECT * from users')
   console.log(res);
   await client.end();
