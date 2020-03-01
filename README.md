@@ -29,7 +29,6 @@ $ npm i node-postgres
 * [x] end
 * [x] ssl
 * [ ] pool
-* [ ] unit test
 * [ ] ...
 
 ## Useage  
@@ -84,8 +83,8 @@ const fs = require('fs');
 })().catch(console.error);
 ```  
 
-### pool 
-to do
+## Test
 
-## test  
-to do
+```bash
+$ npm test
+```  

@@ -1,22 +1,15 @@
 'use strict';
 const assert = require('assert');
-const fs = require('fs');
 const { Client, Pool } = require('../index');
 
-describe('test/ssl.test.js', function () {
+describe('test/client.test.js', function () {
   it('query should ok', async () => {
     const client = new Client({
       user: 'postgres',
       host: '127.0.0.1',
       database: 'test',
       password: 'esri@123',
-      port: 5432,
-      ssl: {
-        rejectUnauthorized: false,
-        // ca: fs.readFileSync('c:/my/server.crt').toString(),
-        key: fs.readFileSync('c:/my/server.key').toString(),
-        cert: fs.readFileSync('c:/my/server.crt').toString(),
-      }
+      port: 5432
     });
 
     await client.connect();
