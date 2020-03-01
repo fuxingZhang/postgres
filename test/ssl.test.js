@@ -19,7 +19,7 @@ const fs = require('fs');
   
   await client.connect();
   
-  const res = await client.query('SELECT * from users')
+  const res = await client.query('SELECT * from users');
   console.log(res);
   await client.end();
 })().catch(console.error);
