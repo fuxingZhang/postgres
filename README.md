@@ -15,8 +15,7 @@ $ npm i node-postgres
 * [x] transactions
 
 ## constructor
-### client
-## Type definitions
+### client constructor options
 ```ts
 import http = require('http');
 import https = require('https');
@@ -32,7 +31,8 @@ interface Options {
   // by default this is 0 which means no timeout
   connectionTimeoutMillis?: int,
 }
-```
+```  
+
 ### pool constructor options
 Every field of the config object is entirely optional. The config passed to the pool is also passed to every client instance within the pool when the pool creates that client.
 ```ts
