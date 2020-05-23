@@ -10,11 +10,6 @@ describe('test/pool.test.js', function () {
     password: 'esri@123',
     port: 5432
   });
-  let client;
-
-  before(async () => {
-    client = await pool.connect();
-  })
 
   after(async () => {
     try {
@@ -26,7 +21,8 @@ describe('test/pool.test.js', function () {
     }
   });
 
-  it('connect should ok', async () => {
+  it('checkout client should ok', async () => {
+    const client = await pool.connect();
     try {
       const res = await client.query('SELECT * from users');
       assert(res);
@@ -42,7 +38,7 @@ describe('test/pool.test.js', function () {
     }
   });
 
-  it('query should ok', async () => {
+  it('pool.query should ok', async () => {
     try {
       const res = await pool.query('SELECT * from users');
       assert(res);

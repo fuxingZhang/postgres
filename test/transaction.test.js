@@ -10,23 +10,27 @@ describe('test/transation.test.js', function () {
     password: 'esri@123',
     port: 5432
   });
-  let client;
 
   before(async () => {
-    client = await pool.connect();
-    const { rowCount, rows } = await client.query(`INSERT INTO users(id, name) VALUES(1, 'zfx') RETURNING id`);
+    const { rowCount, rows } = await pool.query(`INSERT INTO users(id, name) VALUES(1, 'zfx') RETURNING id`);
     assert(rowCount === 1)
     assert(rows.length === 1)
     assert(rows[0].id === 1)
   })
 
   after(async () => {
-    const res = await client.query('DELETE FROM users WHERE id in(1, 2)');
-    assert(res.rowCount === 2);
-    await pool.end();
+    try {
+      const res = await pool.query('DELETE FROM users WHERE id in(1, 2)');
+      assert(res.rowCount === 2);
+      await pool.end();
+      assert(true);
+    } catch (error) {
+      assert(false);
+    }
   });
 
   it('rollback should ok', async () => {
+    const client = await pool.connect();
     try {
       await client.query('BEGIN');
       const del = await client.query('DELETE FROM users WHERE id=1');
@@ -41,13 +45,14 @@ describe('test/transation.test.js', function () {
       assert(res.rows[0].name === 'zfx');
     } catch (e) {
       await client.query('ROLLBACK');
-      throw e;
+      assert(false);
     } finally {
       client.release();
     }
   });
 
   it('commit should ok', async () => {
+    const client = await pool.connect();
     try {
       await client.query('BEGIN');
       const { rows } = await client.query(`INSERT INTO users(id, name) VALUES(2, 'zfx2') RETURNING id`);
@@ -58,7 +63,7 @@ describe('test/transation.test.js', function () {
       assert(res.rows.length === 2);
     } catch (e) {
       await client.query('ROLLBACK');
-      throw e;
+      assert(false);
     } finally {
       client.release();
     }
