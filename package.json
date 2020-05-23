@@ -1,6 +1,6 @@
 {
   "name": "node-postgres",
-  "version": "0.5.0",
+  "version": "0.5.1",
   "description": "PostgreSQL clinet",
   "main": "index.js",
   "scripts": {
