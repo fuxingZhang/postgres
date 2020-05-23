@@ -7,7 +7,7 @@ describe('test/client.test.js', function () {
     const client = new Client({
       user: 'postgres',
       host: '127.0.0.1',
-      database: 'test',
+      database: 'postgres',
       password: 'esri@123',
       port: 5432
     });
